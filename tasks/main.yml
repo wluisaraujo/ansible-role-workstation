@@ -5,7 +5,7 @@
 #  include_vars: "{{ ansible_distribution }}.yml"
 
 - name:  Copia arquivos Base Linux
-  import_tasks: files.yml
+  import_tasks: config2files.yml
   when: (ansible_system == "Linux") 
 
 - name:  Configuracoes de Usuario
