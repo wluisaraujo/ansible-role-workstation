@@ -3,7 +3,7 @@
 
 - name: Instalar pacotes para o "{{ ansible_distribution }}" versão "{{ ansible_distribution_major_version }}"
   apt: 
-    name: {{ item }} 
+    name: "{{ item }}"
     state: latest 
     update_cache: true
   with_items:
@@ -17,7 +17,7 @@
   - mlocate
   - nfs-common
   - nmap
-  - scren
+  - screen
   - sudo
   - tcpdump
   - tree
