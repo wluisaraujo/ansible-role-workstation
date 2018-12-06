@@ -20,7 +20,20 @@
     path: /etc/crontab
     line: "{{ item }}"
   with_items:
-    - ' */30 *  *  *  * root /sbin/sysctl -w vm.drop_caches=3 2> /dev/null &> /dev/null' 
+    - ' */30 *  *  *  * root /sbin/sysctl -w vm.drop_caches=3 2> /dev/null &> /dev/null'
+
+- sysctl:
+    name: "{{ item.name }}"
+    state: present
+    value: "{{ item.value }}"
+    sysctl_file: /etc/sysctl.conf
+    sysctl_set: yes
+    reload: yes
+    ignoreerrors: yes
+  with_items:
+    - { name: 'kernel.nmi_watchdog',value: '0' }
+    - { name: 'vm.drop_caches', value: '3' }
+    - { name: 'vm.swappiness', value: '10'}     
 
 #- name: Configurar arquivo /etc/logrotate.d/personal
 #  copy: src=etc-logrotate.d-personal dest=/etc/logrotate.d/personal owner=root group=root mode=0644
@@ -30,4 +43,5 @@
 #
 #- name: Configurar arquivo /etc/sudoers
 #  copy: src=etc-sudoers dest=/etc/sudoers owner=root group=root mode=0440 
+
 ...
