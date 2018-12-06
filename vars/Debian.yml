@@ -1,0 +1,4 @@
+---
+# vars file for iac-ansible-desktop-environment
+sshd_config_path: /etc/ssh/sshd_config
+sshd_name: ssh

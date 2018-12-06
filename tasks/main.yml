@@ -1,0 +1,11 @@
+---
+# tasks file for iac-ansible-desktop-environment
+
+#- name: Importando variaveis para '{{ ansible_distribution }}'
+#  include_vars: "{{ ansible_distribution }}.yml"
+
+- name: Importando tarefas e configuracoes
+  include_tasks: env_{{ ansible_distribution }}.yml
+
+# InTheEnd
+...
