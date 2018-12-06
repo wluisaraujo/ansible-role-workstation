@@ -1,0 +1,33 @@
+---
+# tasks file for iac-ansible-desktop-environment
+
+#- name: Configurar arquivo /etc/hosts
+#  copy: src=etc-hosts 
+#        dest=/etc/hosts 
+#        owner=root 
+#        group=root 
+#        mode=0644
+  
+- name: Configurar arquivo /etc/hosts.allow 
+  lineinfile: 
+    path: /etc/hosts.allow
+    line: "{{ item }}"
+  with_items:
+    - 'ALL: ALL: spawn /bin/echo "Tentativa de acesso em [$(/bin/date)] - Origem [ %u@%h (%n) ]" &>> /var/log/tcpwrappers.log'
+  
+- name: Configurar arquivo /etc/crontab
+  lineinfile: 
+    path: /etc/crontab
+    line: "{{ item }}"
+  with_items:
+    - ' */30 *  *  *  * root /sbin/sysctl -w vm.drop_caches=3 2> /dev/null &> /dev/null' 
+
+#- name: Configurar arquivo /etc/logrotate.d/personal
+#  copy: src=etc-logrotate.d-personal dest=/etc/logrotate.d/personal owner=root group=root mode=0644
+#
+#- name: Configurar arquivo /etc/logrotate.d/ansible
+#  copy: src=etc-logrotate.d-ansible dest=/etc/logrotate.d/ansible owner=root group=root mode=0644 
+#
+#- name: Configurar arquivo /etc/sudoers
+#  copy: src=etc-sudoers dest=/etc/sudoers owner=root group=root mode=0440 
+...

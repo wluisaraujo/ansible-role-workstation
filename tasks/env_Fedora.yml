@@ -41,7 +41,7 @@
 #    group: root 
 #    mode: 0644  
    
-- name: Instalar pacotes para o "{{ ansible_distribution }}"
+- name: Instalar pacotes para o "{{ ansible_distribution }}" versão "{{ ansible_distribution_major_version }}"
   dnf: 
     name: {{ item }} 
     state: latest 

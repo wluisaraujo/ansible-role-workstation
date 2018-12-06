@@ -4,6 +4,14 @@
 #- name: Importando variaveis para '{{ ansible_distribution }}'
 #  include_vars: "{{ ansible_distribution }}.yml"
 
+- name:  Copia arquivos Base Linux
+  import_tasks: files.yml
+  when: (ansible_system == "Linux") 
+
+- name:  Configuracoes de Usuario
+  import_tasks: config2user.yml
+  when: (ansible_system == "Linux") 
+
 - name: Importando tarefas e configuracoes
   include_tasks: env_{{ ansible_distribution }}.yml
 

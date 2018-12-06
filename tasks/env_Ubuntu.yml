@@ -1,6 +1,31 @@
 ---
 # tasks file for iac-ansible-desktop-environment
 
-- name: Isto é um "{{ ansible_distribution }}" versão "{{ ansible_distribution_major_version }}"
-  ping:
-  when: ( ansible_system == "Linux" )
+- name: Instalar pacotes para o "{{ ansible_distribution }}" versão "{{ ansible_distribution_major_version }}"
+  apt: 
+    name: {{ item }} 
+    state: latest 
+    update_cache: true
+  with_items:
+  - bash-completion
+  - bzip2
+  - ccze
+  - curl
+  - dnsutils
+  - htop
+  - lsof
+  - mlocate
+  - nfs-common
+  - nmap
+  - scren
+  - sudo
+  - tcpdump
+  - tree
+  - tzdata
+  - unzip
+  - vim
+  - wget
+  when: 
+    - ansible_distribution == "Ubuntu"
+    
+...
