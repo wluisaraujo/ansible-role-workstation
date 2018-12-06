@@ -49,7 +49,7 @@ install:
 
 
  # Install ansible-commons
- - ansible-galaxy install wluisaraujo.iac-ansible-desktop-environment
+ - ansible-galaxy install wluisaraujo.iac_ansible_desktop_environment
 
 script:
  # Basic role syntax check

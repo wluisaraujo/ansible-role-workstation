@@ -1,8 +1,0 @@
----
-# tasks file for iac-ansible-desktop-environment
-
-- name: Importando configuracoes para '{{ ansible_os_family }}'
-  include_tasks: env{{ ansible_distribution }}.yml
-
-# InTheEnd
-...
