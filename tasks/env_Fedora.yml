@@ -141,4 +141,19 @@
     - ansible_distribution == "Fedora"
     - RPMFUSIONFREE is success 
     - RPMFUSIONNOFREE is success
+  register: PACKAGE
+
+- systemd:
+    state: started
+    name: tuned.service
+    enabled: yes
+    force: yes
+  ignore_errors: yes
+  when: 
+    - PACKAGE is success
+  register: TUNED
+  
+- shell: tuned-adm profile throughput-performance
+  when:
+    - TUNED is success
 ...
