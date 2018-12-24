@@ -1,27 +1,48 @@
-# Composer files
 composer.phar
 vendor/
-
-# Local configs
 config/autoload/*.local.php
-
-# Binary gettext files
 *.mo
-
-# Data
 data/logs/
 data/cache/
 data/sessions/
 data/tmp/
 temp/
-
-#Doctrine 2
 data/DoctrineORMModule/Proxy/
 data/DoctrineORMModule/cache/
-
-# Legacy ZF1
 demos/
 extras/documentation
+!.bash*
+!.config/
+!.config/i3/*
+!.config/i3/config
+!.config/neofetch/config
+!.config/polybar/*
+!.config/terminator/config
+!.gemrc
+!.gitconfig
+!.gitexcludes
+!.gitignore
+!.profile
+!.wallpapers/*
+!.zsh
+!.zsh/*
+!.zsh/contrib
+!.zsh/contrib/*
+!.zshrc
+# Ignore everything by default.
+#/*
+*.pyc
 *.retry
 */__pycache__
-*.pyc
+*/id_rsa
+.*.swp
+.bash_history
+.bash_local
+.bash_logout
+.config/*
+.zsh/*.swp
+.zsh/data
+.zsh/data/*
+.zsh/local
+.zsh/pre-local
+id_rsa
