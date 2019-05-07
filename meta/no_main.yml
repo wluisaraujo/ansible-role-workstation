@@ -1,0 +1,25 @@
+---
+galaxy_info:
+  author: w.luis.araujo
+  description: "Personalizando ambiente Workstation (Desktop Linux)"
+  company: LUSAR
+  license: "(GPLv3)"
+  min_ansible_version: 2.0
+  platforms:
+  - name: Fedora
+    versions:
+       - 29
+#       - 28
+#       - 27
+#  - name: Debian
+#    versions:
+#    - all
+  galaxy_tags:
+    - desktop
+    - gnome
+	  - fedora-workstation
+    - fedora
+    - workstation
+
+dependencies: []
+...
