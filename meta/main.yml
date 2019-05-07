@@ -21,14 +21,14 @@ galaxy_info:
     versions:
       - xenial
       - bionic
-#
+      
   galaxy_tags: 
     - desktop
     - gnome
     - fedora-workstation
     - fedora
     - workstation
-#
+
   dependencies: []
-#  
+
 ...

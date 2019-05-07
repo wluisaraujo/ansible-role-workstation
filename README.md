@@ -33,7 +33,7 @@ Example Playbook
   vars:
     - name: value
   roles:
-    - iac-ansible-desktop-environment
+    - iac-ansible-workstation-environment
 ...    
 ```
 
