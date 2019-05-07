@@ -1,40 +1,34 @@
 ---
 galaxy_info:
   author: w.luis.araujo
-  description: "Ansible role for installing Ovirt Guest Agent"
+  description: "Personalizando ambiente Workstation (Desktop Linux)"
   company: LUSAR
   license: "(GPLv3)"
-
   min_ansible_version: 2.0
-  
+
   platforms:
-  - name: EL
+  - name: Fedora
     versions:
-    - 7
-    - 6
+      - 30
+      - 29
+      - 28
   - name: Debian
     versions:
-      - wheezy
-      - jessie
+      - buster
       - stretch
+      - jessie
   - name: Ubuntu
     versions:
-      - trusty
       - xenial
       - bionic
-  - name: SLES
-    versions:
-      - 13
-      - 12
-      - 11
-  - name: OpenSUSE
-    versions:
-      - all
-
+#
   galaxy_tags: 
-    - ovirt-guest-agent
-    - ovirt
-
+    - desktop
+    - gnome
+    - fedora-workstation
+    - fedora
+    - workstation
+#
   dependencies: []
 #  
 ...
