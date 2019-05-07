@@ -1,5 +1,5 @@
 ---
-# tasks file for iac-ansible-desktop-environment
+# tasks file for iac-ansible-workstation-environment
 
 #- name: Configurar arquivo /etc/hosts
 #  copy: src=etc-hosts 

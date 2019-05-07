@@ -1,5 +1,5 @@
 ---
-# tasks file for iac-ansible-desktop-environment
+# tasks file for iac-ansible-workstation-environment
 
 - name: Instalar pacotes para o "{{ ansible_distribution }}" versão "{{ ansible_distribution_major_version }}"
   apt: 
@@ -25,7 +25,5 @@
   - unzip
   - vim
   - wget
-  when: 
-    - ansible_distribution == "Ubuntu"
-    
+  when: ansible_distribution == "Ubuntu"
 ...

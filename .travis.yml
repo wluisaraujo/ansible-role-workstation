@@ -1,19 +1,19 @@
 ---
 language: python
-python: "2.7"
+#python: "2.7"
 
 # Use the new container infrastructure
 sudo: true
 
 # This playbook need to run on Ubuntu 14.04 or later
-dist: trust
+#dist: trust
 
 services:
  - docker
 
 env:
   global:
-    - ROLE_NAME: iac-ansible-common-desktop
+    - ROLE_NAME: iac-ansible-workstation-environment
     - ANSIBLE_ACTION_WARNINGS: "False"
     - ANSIBLE_COMMAND_WARNINGS: "False"
     - ANSIBLE_DEPRECATION_WARNINGS: "False"
@@ -23,11 +23,11 @@ env:
  - distribution: centos
    version: 7
  - distribution: fedora
-   version: 26
+   version: 30
  - distribution: fedora
-   version: 25
+   version: 29
  - distribution: fedora
-   version: 24
+   version: 28
  - distribution: ubuntu
    version: xenial
  - distribution: ubuntu

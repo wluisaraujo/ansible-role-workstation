@@ -1,3 +1,5 @@
+# Ignore everything by default.
+#/*
 composer.phar
 vendor/
 config/autoload/*.local.php
@@ -29,8 +31,6 @@ extras/documentation
 !.zsh/contrib
 !.zsh/contrib/*
 !.zshrc
-# Ignore everything by default.
-#/*
 *.pyc
 *.retry
 */__pycache__
