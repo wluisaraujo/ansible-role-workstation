@@ -31,9 +31,9 @@
     reload: yes
     ignoreerrors: yes
   with_items:
-    - { name: 'kernel.nmi_watchdog',value: '0' }
-    - { name: 'vm.drop_caches', value: '3' }
-    - { name: 'vm.swappiness', value: '10'}     
+    - { name: 'kernel.nmi_watchdog',value: '0'}
+    - { name: 'vm.drop_caches', value: '3'}
+    - { name: 'vm.swappiness', value: '10}     
 
 #- name: Configurar arquivo /etc/logrotate.d/personal
 #  copy: src=etc-logrotate.d-personal dest=/etc/logrotate.d/personal owner=root group=root mode=0644
