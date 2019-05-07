@@ -18,8 +18,8 @@ galaxy_info:
     - desktop
     - gnome
 	  - fedora-workstation
-	  - fedora
-  	- workstation
+    - fedora
+    - workstation
 
 dependencies: []
 ...
