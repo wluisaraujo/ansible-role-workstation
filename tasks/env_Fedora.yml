@@ -33,6 +33,17 @@
     key: /etc/pki/rpm-gpg/RPM-GPG-KEY-livna
     validate_certs: no
 
+- sheel: dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
+- sheel: dnf config-manager --set-enabled docker-ce-nightly
+- sheel: dnf config-manager --set-enabled fedora-cisco-openh264
+- sheel: dnf config-manager --set-enabled fedora-modular
+- sheel: dnf config-manager --set-enabled fedora
+- sheel: dnf config-manager --set-enabled updates-modular
+- sheel: dnf config-manager --set-enabled updates
+- sheel: dnf config-manager --set-enabled updates-testing-modular
+- sheel: dnf config-manager --set-enabled updates-testing
+
+
 #- name: Adicionando Repositorio Google Chrome
 #  copy: 
 #    src: google-chrome.repo 
