@@ -12,6 +12,7 @@
   - ccze
   - curl
   - dnsutils
+  - git
   - htop
   - lsof
   - mlocate
