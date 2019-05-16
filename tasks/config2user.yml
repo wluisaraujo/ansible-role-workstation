@@ -2,17 +2,16 @@
 # tasks file for iac-ansible-workstation-environment
 
 - group:
-        name: wheel
-        state: present
-        system: yes
+    name: wheel
+    state: present
+    system: yes
   register: result      
         
 - name: Configurando usuário "lusar"
   user: 
-    name: lusar
+    name: "{{ create_user }}"
     state: present  
     shell: /bin/bash 
-    comment: "W. Luis Araujo"
+    comment: "{{ comm_user }}"
     groups: wheel
-
 ...
