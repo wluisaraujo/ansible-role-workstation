@@ -44,4 +44,10 @@
 #- name: Configurar arquivo /etc/sudoers
 #  copy: src=etc-sudoers dest=/etc/sudoers owner=root group=root mode=0440 
 
+#    - name: Disable password authentication for root
+#      lineinfile:
+#        path: /etc/ssh/sshd_config
+#        state: present
+#        regexp: '^PermitRootLogin'
+#        line: 'PermitRootLogin prohibit-password'
 ...
