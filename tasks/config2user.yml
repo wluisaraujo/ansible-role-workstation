@@ -6,12 +6,24 @@
     state: present
     system: yes
   register: result      
-        
-- name: Configurando usuário "lusar"
+         
+- lineinfile:
+    path: /etc/sudoers
+    state: present
+    regexp: '^%wheel'
+    line: '%wheel ALL=(ALL) NOPASSWD: ALL'
+    validate: '/usr/sbin/visudo -cf %s'    
+
+- name: Configurando usuário "{{ create_user }}"
   user: 
     name: "{{ create_user }}"
     state: present  
     shell: /bin/bash 
     comment: "{{ comm_user }}"
     groups: wheel
+
+- authorized_key:
+    user: "{{ create_user }}"
+    state: present
+    key: "{{ copy_key }}"
 ...
