@@ -1,4 +1,4 @@
 ---
 # vars file for iac-ansible-workstation-environment
-create_user: sammy
+create_user: lusar
 copy_local_key: "{{ lookup('file', lookup('env','HOME') + '/.ssh/id_rsa.pub') }}"
