@@ -1,4 +1,4 @@
-[![Ansible Galaxy](https://img.shields.io/badge/Ansible%20Galaxy-Desktop%20Linux-blue.svg)](https://git.io/fjRaK)  [![Build Status](https://travis-ci.org/wluisaraujo/iac-ansible-workstation-environment.svg?branch=master)](https://travis-ci.org/wluisaraujo/iac-ansible-workstation-environment)
+[![Ansible Galaxy](https://img.shields.io/badge/Ansible%20Galaxy-Workstation%20Environment-blue.svg)](https://git.io/fjRaK)  [![Build Status](https://travis-ci.org/wluisaraujo/iac-ansible-workstation-environment.svg?branch=master)](https://travis-ci.org/wluisaraujo/iac-ansible-workstation-environment)
 ---
 ## IaC: with [Ansible](https://www.ansible.com) role to configure [Desktop Environment](https://getfedora.org/pt_BR/workstation/)
 ------------
