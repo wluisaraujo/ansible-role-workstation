@@ -1,9 +1,13 @@
 ---
 galaxy_info:
+  role_name: iac-ansible-workstation-environment
+  
   author: w.luis.araujo
   description: "Personalizando ambiente Workstation (Desktop Linux)"
   company: LUSAR
+  
   license: "(GPLv3)"
+  
   min_ansible_version: 2.0
 
   platforms:
@@ -12,11 +16,13 @@ galaxy_info:
       - 30
       - 29
       - 28
+      
   - name: Debian
     versions:
       - buster
       - stretch
       - jessie
+      
   - name: Ubuntu
     versions:
       - xenial
@@ -30,5 +36,4 @@ galaxy_info:
     - workstation
 
   dependencies: []
-
 ...
