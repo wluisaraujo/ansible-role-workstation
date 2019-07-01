@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  role_name: iac-ansible-workstation-environment
+  role_name: workstation
   
   author: w.luis.araujo
   description: "Personalizando ambiente Workstation (Desktop Linux)"

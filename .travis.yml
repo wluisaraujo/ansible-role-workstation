@@ -13,7 +13,7 @@ services:
 
 env:
   global:
-    - ROLE_NAME: iac-ansible-workstation-environment
+    - ROLE_NAME: workstation
     - ANSIBLE_ACTION_WARNINGS: "False"
     - ANSIBLE_COMMAND_WARNINGS: "False"
     - ANSIBLE_DEPRECATION_WARNINGS: "False"
@@ -55,7 +55,7 @@ install:
 
 
  # Install ansible-commons
- - ansible-galaxy install wluisaraujo.iac_ansible_workstation_environment
+ - ansible-galaxy install wluisaraujo.workstation
 
 script:
  # Basic role syntax check

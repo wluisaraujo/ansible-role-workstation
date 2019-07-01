@@ -1,4 +1,4 @@
 ---
-# vars file for iac-ansible-workstation-environment
+# vars file for workstation
 sshd_config_path: /etc/ssh/sshd_config
 sshd_name: ssh
