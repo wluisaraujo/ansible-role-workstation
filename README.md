@@ -1,4 +1,4 @@
-[![Ansible Galaxy](https://img.shields.io/badge/Ansible%20Galaxy-Workstation%20Environment-blue.svg)](https://galaxy.ansible.com/wluisaraujo/iac_ansible_workstation_environment)  [![Build Status](https://travis-ci.org/wluisaraujo/iac-ansible-workstation-environment.svg?branch=master)](https://travis-ci.org/wluisaraujo/iac-ansible-workstation-environment)
+[![Ansible Galaxy](https://img.shields.io/badge/Ansible%20Galaxy-Workstation%20Environment-blue.svg)](https://galaxy.ansible.com/wluisaraujo/workstation)  [![Build Status](https://travis-ci.org/wluisaraujo/ansible-role-workstation.svg?branch=master)](https://travis-ci.org/wluisaraujo/ansible-role-workstation)
 ---
 ## IaC: with [Ansible](https://www.ansible.com) role to configure [Desktop Environment](https://getfedora.org/pt_BR/workstation/)
 ------------
@@ -33,8 +33,8 @@ Example Playbook
   vars:
     - name: value
   roles:
-    - iac-ansible-workstation-environment
-...    
+    - workstation
+...
 ```
 
 ----------------
