@@ -148,6 +148,8 @@
     - vmtouch
     - wget
     - zip
+    - screenfetch
+    
   when: 
     - ansible_distribution == "Fedora"
     - RPMFUSIONFREE is success 
