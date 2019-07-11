@@ -2,5 +2,11 @@
 # tasks file for workstation
 
 - name: Isto é um "{{ ansible_distribution }}" versão "{{ ansible_distribution_major_version }}"
-  ping:
-  when: ( ansible_system == "Linux" )
+  yum:
+    state: latest
+    name: "{{ item }}"
+  when: ( ansible_distribution == "CentOS" )
+  loop:
+    - epel-release
+    - centos-release-scl.noarch
+    - http://download-ib01.fedoraproject.org/pub/fedora/linux/releases/30/Everything/x86_64/os/Packages/s/screenfetch-3.8.0-5.fc30.noarch.rpm
