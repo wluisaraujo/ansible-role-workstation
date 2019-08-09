@@ -1,0 +1,10 @@
+---
+# apply sysctl config
+
+# disable inative services
+
+# install/config rkhunter
+
+# install/config LMD
+
+# install/config chkrootkit
