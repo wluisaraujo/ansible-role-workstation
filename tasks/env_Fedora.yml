@@ -42,6 +42,7 @@
     - ccze
     - cifs-utils
     - curl
+    - dnf-automatic
     - dkms
     - dropbox
     - easytag
