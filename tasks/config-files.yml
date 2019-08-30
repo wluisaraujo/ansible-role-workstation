@@ -30,12 +30,6 @@
     backup: yes
   
 - lineinfile:
-    path: /etc/sudoers
-    state: present
-    line: "{{lookup('file', 'templates/etc-sudoers.j2')}}"
-    backup: yes
-  
-- lineinfile:
     path: /etc/sysctl.conf
     state: present
     line: "{{lookup('file', 'templates/etc-sysctl.j2')}}"

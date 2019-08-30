@@ -1,17 +1,12 @@
 ---
-- hosts: workstation
-  connection: local
-  
-  tasks:
- 
-  - package: 
-      name: "{{ item }}" 
-      state: latest
-      update_cache: yes  
-    loop:
-      - chkrootkit
-      - inotify-tools
-      - rkhunter    
+- package: 
+    name: "{{ item }}" 
+    state: latest
+    update_cache: yes  
+  loop:
+    - chkrootkit
+    - inotify-tools
+    - rkhunter    
 ...
 # apply sysctl config
 

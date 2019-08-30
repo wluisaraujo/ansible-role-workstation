@@ -1,21 +1,19 @@
 ---
 # tasks file for workstation
-
 - group:
     name: wheel
     state: present
     system: yes
   register: result      
-         
+
 - lineinfile:
     path: /etc/sudoers
     state: present
-    regexp: '^%wheel'
-    line: '%wheel ALL=(ALL) NOPASSWD: ALL'
-    validate: '/usr/sbin/visudo -cf %s'    
-
-- name: Configurando usuário "{{ create_user }}"
-  user: 
+    line: "{{lookup('file', 'templates/etc-sudoers.j2')}}"
+    backup: yes
+    validate: '/usr/sbin/visudo -cf %s'
+           
+- user: 
     name: "{{ create_user }}"
     state: present  
     shell: /bin/bash 
