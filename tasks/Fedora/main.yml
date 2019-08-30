@@ -1,0 +1,42 @@
+---
+## w.luis.araujo@gmail.com
+## Agosto/2019
+##
+- hosts: workstation
+  #connection: local
+  
+  vars:
+    user: lusar
+    
+  tasks:
+  - assert:
+      msg: "This role can only be applied to Linux Environment"
+      that: ansible_distribution == "Fedora"
+
+#- import_playbook: fedora-files.yml
+#  tags: FILES
+
+- import_playbook: fedora-environment.yml
+  tags: CONFIG   
+    
+- import_playbook: fedora-repo.yml
+  tags: REPO
+
+- import_playbook: fedora-package.yml
+  tags: PACKAGE
+  
+- import_playbook: fedora-systemd.yml
+  tags: SERVICE
+
+- import_playbook: fedora-virtualbox.yml
+  tags: VBOX 
+  
+- import_playbook: fedora-docker.yml
+  tags: DOCKER  
+
+- import_playbook: fedora-vagrant.yml
+  tags: VAGRANT
+  
+#- import_playbook: fedora-sectools.yml
+#  tags: SECTOOLS   
+...

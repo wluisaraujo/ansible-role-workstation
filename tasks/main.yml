@@ -1,19 +1,27 @@
 ---
 # tasks file for workstation
 
-#- name: Importando variaveis para '{{ ansible_distribution }}'
-#  include_vars: "{{ ansible_distribution }}.yml"
+- assert:
+    msg: "This role can only be applied to Linux Environment"
+    that: ansible_system == "Linux"
+      
+- name: "Important variables {{ ansible_distribution }}"
+  include_vars: "{{ ansible_distribution }}.yml"
 
-- name:  Copia arquivos Base Linux
-  import_tasks: config2files.yml
+- name: "Managing Files"
+  import_tasks: config-files.yml
   when: (ansible_system == "Linux") 
 
-- name:  Configuracoes de Usuario
-  import_tasks: config2user.yml
+- name: "Managing User"
+  import_tasks: config-user.yml
   when: (ansible_system == "Linux") 
 
-- name: Importando tarefas e configuracoes
-  include_tasks: env_{{ ansible_distribution }}.yml
+- name:  "Security Tools"
+  import_tasks: config-sectools.yml
+  when: (ansible_system == "Linux")
+
+- name: "Importing Tasks =>> {{ ansible_distribution }}"
+  include_tasks: "{{ ansible_distribution }}/main.yml"
 
 # InTheEnd
 ...

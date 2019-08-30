@@ -1,5 +1,6 @@
 ---
 # vars file for workstation
+user: lusar
 create_user: lusar
 create_user: w.luis.araujo
 #copy_key: "{{ lookup('file', lookup('env','HOME') + '/.ssh/id_rsa.pub') }}"[
