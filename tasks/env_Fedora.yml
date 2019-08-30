@@ -19,6 +19,9 @@
 - sheel: dnf config-manager --add-repo "{{ item }}"
   loop:
     - https://download.docker.com/linux/fedora/docker-ce.repo
+
+- sheel: dnf config-manager --set-enabled "{{ item }}"
+  loop:    
     - docker-ce-nightly
     - fedora-cisco-openh264
     - fedora-modular
@@ -101,8 +104,6 @@
     - numix-icon-theme 
     - numix-icon-theme-circle 
     - openssh-server
-#   - pidgin
-#   - pidgin-otr
     - pinta
     - platform-python-dnf
     - remmina
@@ -125,8 +126,7 @@
     - vmtouch
     - wget
     - zip
-    - screenfetch
-    
+    - screenfetch   
   when: 
     - ansible_distribution == "Fedora"
     - RPMFUSIONFREE is success 
