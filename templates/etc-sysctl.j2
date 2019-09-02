@@ -1,6 +1,8 @@
 # /etc/sysctl.conf
 #kernel.domainname = corpflex.com.br
 kernel.nmi_watchdog = 0
+net.ipv4.icmp_echo_ignore_all = 1
+net.ipv4.icmp_echo_ignore_broadcasts = 1
 net.ipv4.tcp_timestamps = 0
 vm.drop_caches = 3
 vm.swappiness = 10
