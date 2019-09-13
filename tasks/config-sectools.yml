@@ -5,6 +5,7 @@
     update_cache: yes  
   loop:
     - chkrootkit
+    - clamd
     - inotify-tools
     - rkhunter    
 ...
