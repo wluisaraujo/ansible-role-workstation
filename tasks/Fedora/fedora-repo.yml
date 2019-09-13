@@ -8,7 +8,10 @@
 #- shell: dnf config-manager --add-repo "{{ item }}"
 #  loop:
 #    - https://download.docker.com/linux/fedora/docker-ce.repo
-    
+
+# wget https://dl.google.com/linux/linux_signing_key.pub
+# sudo rpm --import linux_signing_key.pub
+#
   - shell: dnf config-manager --set-enabled "{{ item }}"
     loop:
       - docker-ce-nightly
