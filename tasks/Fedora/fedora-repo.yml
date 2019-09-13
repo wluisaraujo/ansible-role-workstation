@@ -1,5 +1,5 @@
 ---
-- hosts: workstation
+- hosts: localhost
   connection: local
   
   tasks:
@@ -12,6 +12,14 @@
 # wget https://dl.google.com/linux/linux_signing_key.pub
 # sudo rpm --import linux_signing_key.pub
 #
+#            yum:
+#                    name: http://rpm.livna.org/livna-release.rpm
+#                    state: latest          
+#          - name: Adicionando RPM KEY Livna
+#            rpm_key:
+#                    state: present
+#                    key: /etc/pki/rpm-gpg/RPM-GPG-KEY-livna
+#                    validate_certs: no
   - shell: dnf config-manager --set-enabled "{{ item }}"
     loop:
       - docker-ce-nightly

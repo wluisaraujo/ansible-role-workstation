@@ -26,6 +26,7 @@
       - gcc
       - gedit
       - git
+      - git-core
       - gnome-gmail
       - gnome-shell-extension-apps-menu
       - gnome-shell-extension-background-logo
@@ -36,6 +37,7 @@
       - gnome-shell-extension-places-menu
       - gnome-shell-extension-window-list
       - gnome-tweak-tool
+      - google-chrome-stable
       - gstreamer
       - gstreamer-ffmpeg
       - gstreamer-plugins-bad
@@ -48,6 +50,9 @@
       - gstreamer1-plugins-base
       - gstreamer1-plugins-good
       - htop
+      - icedtea-web
+      - java
+      - java-openjdk
       - kernel-devel
       - kernel-headers
       - kernel-modules
@@ -57,7 +62,6 @@
       - libgudev
       - libreoffice-langpack-pt-BR
       - linux-firmware
-      - lsof
       - lsof
       - lvm2
       - make
@@ -71,13 +75,11 @@
       - numix-gtk-theme 
       - numix-icon-theme
       - numix-icon-theme-circle 
-      - openssh-server
       - pinta
       - platform-python-dnf
       - python3-pip
       - remmina
       - remmina-plugins-rdp
-      - rsync
       - rsync
       - screen
       - screenfetch
@@ -91,7 +93,6 @@
       - vim
       - vim-enhanced
       - vlc
-      - wget
       - wget
       - zip
  
