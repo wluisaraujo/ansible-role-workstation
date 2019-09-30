@@ -15,6 +15,15 @@ Requirements
 
  *
 
+Installation
+------------
+
+```console
+vagrant@localhost:~$ ansible-galaxy install wluisaraujo.workstation
+vagrant@localhost:~$ ansible-galaxy install -r wluisaraujo.workstation/requirements.txt
+```
+
+
 Role Variables
 --------------
 
