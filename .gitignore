@@ -1,18 +1,5 @@
 # Ignore everything by default.
 #/*
-composer.phar
-vendor/
-config/autoload/*.local.php
-*.mo
-data/logs/
-data/cache/
-data/sessions/
-data/tmp/
-temp/
-data/DoctrineORMModule/Proxy/
-data/DoctrineORMModule/cache/
-demos/
-extras/documentation
 !.bash*
 !.config/
 !.config/i3/*
@@ -46,3 +33,5 @@ extras/documentation
 .zsh/local
 .zsh/pre-local
 id_rsa
+.vagrant
+.vagrant/*

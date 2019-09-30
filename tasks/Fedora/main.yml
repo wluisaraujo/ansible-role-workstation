@@ -5,9 +5,11 @@
 - hosts: localhost
   connection: local
   
-  vars:
-    user: lusar
-    
+  vars_prompt:
+    - name: "user"
+      prompt: "Digite o nome do user"
+      private: no
+
   tasks:
   - assert:
       msg: "This role can only be applied to Linux Environment"
