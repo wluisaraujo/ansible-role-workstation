@@ -7,8 +7,7 @@
       name: "{{ packages }}" 
       state: latest
 #     loop:
-#       - NetworkManager-openvpn
-#       - NetworkManager-openvpn-gnome
+#	- autofs
 #       - bash-completion
 #       - bind-utils
 #       - bzip2
@@ -41,16 +40,16 @@
 #       - gnome-tweak-tool
 #       - google-chrome-stable
 #       - gstreamer
+#       - gstreamer1
+#       - gstreamer1-plugins-bad-free
+#       - gstreamer1-plugins-base
+#       - gstreamer1-plugins-good
 #       - gstreamer-ffmpeg
 #       - gstreamer-plugins-bad
 #       - gstreamer-plugins-bad-free
 #       - gstreamer-plugins-base
 #       - gstreamer-plugins-good
 #       - gstreamer-plugins-ugly
-#       - gstreamer1
-#       - gstreamer1-plugins-bad-free
-#       - gstreamer1-plugins-base
-#       - gstreamer1-plugins-good
 #       - htop
 #       - icedtea-web
 #       - java
@@ -71,6 +70,8 @@
 #       - mtr
 #       - nautilus-dropbox
 #       - net-tools
+#       - NetworkManager-openvpn
+#       - NetworkManager-openvpn-gnome
 #       - nfs-utils
 #       - nmap
 #       - ntfs-3g
@@ -98,11 +99,4 @@
 #       - vlc
 #       - wget
 #       - zip
-#
-# ### FingerPrint on DELL Latitude 3480
-# #yum list fprintd libfprint
-# #fprintd-enroll myself
-# #systemctl status fprintd
-# #https://launchpad.net/~fingerprint/+archive/ubuntu/fingerprint-
-# #gdm-plugin-fingerprint
-# #http://en.community.dell.com/techcenter/os-applications/f/4613/t/20006668
+

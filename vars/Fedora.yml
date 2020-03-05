@@ -3,3 +3,14 @@
 sshd_config_path: /etc/ssh/sshd_config
 sshd_name: sshd
 user: w.luis.araujo
+
+packages:
+  - fprintd 
+  - libfprint
+# ### FingerPrint on DELL Latitude 3480
+# #yum list fprintd libfprint
+# #fprintd-enroll myself
+# #systemctl status fprintd
+# #https://launchpad.net/~fingerprint/+archive/ubuntu/fingerprint-
+# #gdm-plugin-fingerprint
+# #http://en.community.dell.com/techcenter/os-applications/f/4613/t/20006668

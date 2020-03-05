@@ -7,11 +7,11 @@
       name: "{{ item }}" 
       state: latest 
     loop:
-      - NetworkManager-openvpn
-      - NetworkManager-openvpn-gnome
       - azure-cli
       - https://downloads.slack-edge.com/linux_releases/slack-4.0.2-0.1.fc21.x86_64.rpm
       - https://prerelease.keybase.io/keybase_amd64.rpm
+      - NetworkManager-openvpn
+      - NetworkManager-openvpn-gnome
       - openconnect
       - openvpn-auth-ldap
       - seahorse

@@ -8,12 +8,13 @@ create_user: w.luis.araujo
 copy_key: https://github.com/wluisaraujo.keys
 
 packages:
-  - NetworkManager-openvpn
-  - NetworkManager-openvpn-gnome
+  - autofs
+  - azure-cli
   - bash-completion
   - bind-utils
   - bzip2
   - ccze
+  - chkrootkit
   - chrony
   - cifs-utils
   - curl
@@ -42,18 +43,21 @@ packages:
   - gnome-tweak-tool
   - google-chrome-stable
   - gstreamer
+  - gstreamer1
+  - gstreamer1-plugins-bad-free
+  - gstreamer1-plugins-base
+  - gstreamer1-plugins-good
   - gstreamer-ffmpeg
   - gstreamer-plugins-bad
   - gstreamer-plugins-bad-free
   - gstreamer-plugins-base
   - gstreamer-plugins-good
   - gstreamer-plugins-ugly
-  - gstreamer1
-  - gstreamer1-plugins-bad-free
-  - gstreamer1-plugins-base
-  - gstreamer1-plugins-good
   - htop
+  - https://downloads.slack-edge.com/linux_releases/slack-4.0.2-0.1.fc21.x86_64.rpm
+  - https://prerelease.keybase.io/keybase_amd64.rpm
   - icedtea-web
+  - inotify-tools
   - java
   - java-openjdk
   - kernel-devel
@@ -72,18 +76,24 @@ packages:
   - mtr
   - nautilus-dropbox
   - net-tools
+  - NetworkManager-openvpn
+  - NetworkManager-openvpn
+  - NetworkManager-openvpn-gnome
+  - NetworkManager-openvpn-gnome
   - nfs-utils
   - nmap
   - ntfs-3g
   - numix-gtk-theme
   - numix-icon-theme
   - numix-icon-theme-circle
+  - openconnect
   - openvpn-auth-ldap
   - pinta
   - platform-python-dnf
   - python3-pip
   - remmina
   - remmina-plugins-rdp
+  - rkhunter   
   - rsync
   - screen
   - screenfetch
@@ -97,5 +107,8 @@ packages:
   - vim
   - vim-enhanced
   - vlc
+  - vpnc 
   - wget
   - zip
+  - zsh
+
