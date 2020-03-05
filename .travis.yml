@@ -19,22 +19,22 @@ env:
     - ANSIBLE_DEPRECATION_WARNINGS: "False"
     - ANSIBLE_SYSTEM_WARNINGS: "False"
     - ANSIBLE_HOST_KEY_CHECKING: "False"
-     
+
  - distribution: centos
    version: 7
  - distribution: fedora
    version: 30
  - distribution: fedora
-   version: 29  
+   version: 29
  - distribution: ubuntu
    version: bionic
  - distribution: ubuntu
-   version: xenial  
+   version: xenial
  - distribution: debian
    version: buster
  - distribution: debian
    version: stretch
- 
+
 # Install ansible
 addons:
  apt:

@@ -2,5 +2,5 @@
 # vars file for workstation
 user: w.luis.araujo
 create_user: w.luis.araujo
-#copy_key: "{{ lookup('file', lookup('env','HOME') + '/.ssh/id_rsa.pub') }}"[
+#copy_key: "{{ lookup('file', lookup('env','HOME') + '/.ssh/id_rsa.pub') }}"
 copy_key: https://github.com/wluisaraujo.keys
