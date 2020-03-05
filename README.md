@@ -8,8 +8,8 @@ Description
 
  * Configurações básicas para um DesktopLinux
 	- Adiciona a tarefa agendada vm.drop_caches
-	- Regrinha de hosts.allow, capturandos todas conexões (tcpwrapper)
-	
+	- Regrinha de hosts.allow, capturando todas conexões (tcpwrapper)
+
 Requirements
 ------------
 
