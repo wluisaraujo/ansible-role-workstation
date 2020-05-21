@@ -13,12 +13,5 @@
 
   - lineinfile:
       path: /etc/sysconfig/init
-      regexp: '^{{ item }}'
-      state: absent
-    loop:
-      - PROMPT=no
-
-  - lineinfile:
-      path: /etc/sysconfig/init
       state: present
       line: "PROMPT=no"
