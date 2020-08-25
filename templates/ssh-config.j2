@@ -1,0 +1,13 @@
+##
+Host *
+  Compression yes
+  ForwardAgent yes
+  GSSAPIAuthentication no
+  IdentityFile "~/.ssh/id_rsa"
+  ServerAliveCountMax 3
+  ServerAliveInterval 10
+  StrictHostKeyChecking no
+##
+Host *.dexter.com.br 172.16.100.* security storage web01 web02 proxy mail devops cliente-externo
+  StrictHostKeyChecking no
+  User suporte

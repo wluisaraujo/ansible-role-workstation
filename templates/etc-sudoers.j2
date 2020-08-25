@@ -1,5 +1,5 @@
 # /etc/sudoers
-Cmnd_Alias BYPASS = /usr/bin/openfortivpn, /usr/bin/date 
+Cmnd_Alias BYPASS = /usr/bin/date, ~/bin/backup/backup.sh
 "{{ user }}" ALL=NOPASSWD: BYPASS
-    
+
 %wheel ALL=(ALL) NOPASSWD: ALL
