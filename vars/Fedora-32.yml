@@ -54,8 +54,6 @@ packages:
   - gstreamer-plugins-good
   - gstreamer-plugins-ugly
   - htop
-  - https://downloads.slack-edge.com/linux_releases/slack-4.0.2-0.1.fc21.x86_64.rpm
-  - https://prerelease.keybase.io/keybase_amd64.rpm
   - icedtea-web
   - inotify-tools
   - java
@@ -76,23 +74,15 @@ packages:
   - mtr
   - nautilus-dropbox
   - net-tools
-  - NetworkManager-openvpn
-  - NetworkManager-openvpn
-  - NetworkManager-openvpn-gnome
-  - NetworkManager-openvpn-gnome
   - nfs-utils
   - nmap
   - ntfs-3g
   - numix-gtk-theme
   - numix-icon-theme
   - numix-icon-theme-circle
-  - openconnect
-  - openvpn-auth-ldap
   - pinta
   - platform-python-dnf
   - python3-pip
-  - remmina
-  - remmina-plugins-rdp
   - rkhunter
   - rsync
   - screen
@@ -107,19 +97,20 @@ packages:
   - vim
   - vim-enhanced
   - vlc
-  - vpnc
   - wget
   - zip
   - zsh
 
 packages4work:
   - azure-cli
-  - https://downloads.slack-edge.com/linux_releases/slack-4.0.2-0.1.fc21.x86_64.rpm
+  - https://downloads.slack-edge.com/linux_releases/slack-4.8.0-0.1.fc21.x86_64.rpm
   - https://prerelease.keybase.io/keybase_amd64.rpm
   - NetworkManager-openvpn
   - NetworkManager-openvpn-gnome
   - openconnect
   - openvpn-auth-ldap
+  - remmina
+  - remmina-plugins-rdp
   - seahorse
   - vpnc
   - zsh
